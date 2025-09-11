@@ -35,4 +35,9 @@ func main() {
 	fmt.Println(profileName)
 	fmt.Println(profileAge)
 	fmt.Println(profileSchool)
+
+	fmt.Println(profile)
+	fmt.Println(profileName)
+	fmt.Println(profileAge)
+	fmt.Println(profileSchool)
 }
