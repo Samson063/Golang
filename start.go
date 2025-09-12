@@ -19,6 +19,9 @@ func main() {
 	name3 := "Anthony Samson"
 	var school string
 
+	const MYNAME string = "Anthony Samson"
+	const SCHOOLFEES int = 100000
+
 	fmt.Println("Hello World!")
 
 	fmt.Println(name)
@@ -36,8 +39,11 @@ func main() {
 	fmt.Println(profileAge)
 	fmt.Println(profileSchool)
 
-	fmt.Println(profile)
-	fmt.Println(profileName)
-	fmt.Println(profileAge)
-	fmt.Println(profileSchool)
+	fmt.Println(profile2)
+	fmt.Println(profile2Name)
+	fmt.Println(profile2Age)
+	fmt.Println(profile2School)
+
+	fmt.Println(MYNAME)
+	fmt.Println(SCHOOLFEES)
 }
