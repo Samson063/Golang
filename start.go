@@ -19,8 +19,15 @@ func main() {
 	name3 := "Anthony Samson"
 	var school string
 
+	//Typed constant
 	const MYNAME string = "Anthony Samson"
 	const SCHOOLFEES int = 100000
+
+	const (
+		company  string = "NUPRC"
+		branches int    = 7
+		point           = 3.4
+	)
 
 	fmt.Println("Hello World!")
 
@@ -29,9 +36,9 @@ func main() {
 	fmt.Println(name3)
 	fmt.Println(school)
 
-	fmt.Println(church)
-	fmt.Println(address)
-	fmt.Println(parish)
+	fmt.Println(company)
+	fmt.Println(branches)
+	fmt.Println(point)
 	fmt.Println(area)
 
 	fmt.Println(profile)
@@ -46,4 +53,15 @@ func main() {
 
 	fmt.Println(MYNAME)
 	fmt.Println(SCHOOLFEES)
+
+	//Output Functions
+
+	var new, old = "Dell latitude", "Hp pavilion"
+	var num1, num2 = 20, 80
+
+	fmt.Print(new, old, "\n")
+	fmt.Println(new, old)
+	fmt.Print(num1, num2)
+	fmt.Println(num1, num2)
+
 }
