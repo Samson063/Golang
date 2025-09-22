@@ -64,11 +64,11 @@ func main() {
 
 	//Arrays
 
-	arr1 := [5]int{}              //not initialized
+	//arr1 := [5]int{}              //not initialized
 	arr2 := [5]int{1, 2}          //partially initialized
 	arr3 := [5]int{1, 2, 3, 4, 5} //fully initialized
 
-	fmt.Println(arr1)
+	//fmt.Println(arr1)
 	fmt.Println(arr2)
 	fmt.Println(arr3)
 	fmt.Println(len(arr2))
@@ -84,5 +84,24 @@ func main() {
 	fmt.Println(len(myslice2))
 	fmt.Println(cap(myslice2))
 	fmt.Println(myslice2)
+
+	arr1 := [6]int{10, 11, 12, 13, 14, 15}
+	myslice := arr1[2:4]
+
+	fmt.Printf("myslice = %v\n", myslice)
+	fmt.Printf("length = %d\n", len(myslice))
+	fmt.Printf("capacity = %d\n", cap(myslice))
+
+	//creating sclice using the make() function
+	mmyslice1 := make([]int, 5, 10)
+	fmt.Printf("myslice1 = %v\n", mmyslice1)
+	fmt.Printf("length = %d\n", len(mmyslice1))
+	fmt.Printf("capacity = %d\n", cap(mmyslice1))
+
+	// with omitted capacity
+	mmyslice2 := make([]int, 5)
+	fmt.Printf("myslice2 = %v\n", mmyslice2)
+	fmt.Printf("length = %d\n", len(mmyslice2))
+	fmt.Printf("capacity = %d\n", cap(mmyslice2))
 
 }
