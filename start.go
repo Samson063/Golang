@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-var church, address, parish, area string = "Rccg", "Alapere", "Peculiar", "Four"
+var church, address, parish, area string = "Rccg", "Alapere", "Pec  uliar", "Four"
 var profile, profileName, profileAge, profileSchool = 1, "Anthony Mercy", 23, "Nazareth"
 var (
 	profile2       int    = 2
@@ -54,8 +54,6 @@ func main() {
 	fmt.Println(MYNAME)
 	fmt.Println(SCHOOLFEES)
 
-	//Output Functions
-
 	var new, old = "Dell latitude", "Hp pavilion"
 	var num1, num2 = 20, 80
 
@@ -63,5 +61,28 @@ func main() {
 	fmt.Println(new, old)
 	fmt.Print(num1, num2)
 	fmt.Println(num1, num2)
+
+	//Arrays
+
+	arr1 := [5]int{}              //not initialized
+	arr2 := [5]int{1, 2}          //partially initialized
+	arr3 := [5]int{1, 2, 3, 4, 5} //fully initialized
+
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+	fmt.Println(arr3)
+	fmt.Println(len(arr2))
+
+	//Slice
+
+	myslice1 := []int{}
+	fmt.Println(len(myslice1))
+	fmt.Println(cap(myslice1))
+	fmt.Println(myslice1)
+
+	myslice2 := []string{"Go", "Slices", "Are", "Powerful"}
+	fmt.Println(len(myslice2))
+	fmt.Println(cap(myslice2))
+	fmt.Println(myslice2)
 
 }
